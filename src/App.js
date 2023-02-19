@@ -1,11 +1,11 @@
-import { useState } from "react";
-import "./App.css";
-import Header from "./componets/Header";
-import Fields from "./componets/Fields";
+import { useState } from 'react';
+import './App.css';
+import Header from './componets/Header';
+import Fields from './componets/Fields';
 
 function App() {
-  const [name, setname] = useState("");
-  const [email, setemail] = useState("");
+  const [name, setname] = useState('');
+  const [email, setemail] = useState('');
   const [data, setdata] = useState([]);
 
   const addData = () => {
@@ -18,31 +18,30 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
-      <div className="input">
+      <div className='input'>
         Name :
         <input
           value={name}
-          label="surname"
-          variant="outlined"
+          label='surname'
+          variant='outlined'
           onChange={(event) => setname(event.target.value)}
         />
         <br />
         Email :
         <input
           value={email}
-          label="name"
-          variant="outlined"
+          label='name'
+          variant='outlined'
           onChange={(event) => setemail(event.target.value)}
         />
         <br />
-        <button onClick={addData} className="i-btn">
+        <button onClick={addData} className='i-btn'>
           Add
         </button>
-        {/* {data} */}
-        <div className="data">
-          <div className="data_val">
+        <div className='data'>
+          <div className='data_val'>
             <h4>Name</h4>
             <h4>Email</h4>
             <h4>Delete</h4>
