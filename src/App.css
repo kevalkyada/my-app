@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+.i-btn {
+  margin-top: 15px;
+  width: 57%;
+  background-color: rgb(28, 25, 25);
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.input {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14px;
+  width: 100%;
+}
+
+.data_val {
+  display: flex;
+  padding: 0px 9px 0px 9px;
+  justify-content: space-between;
+  width: 50%;
+}
